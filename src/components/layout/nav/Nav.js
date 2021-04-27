@@ -1,12 +1,13 @@
+import {Link} from "react-router-dom";
 function Nav() {
     return (
         <nav className="bg-warning">
             <ul className="nav">
                 <li className="nav-item">
-                    <a className="nav-link text-dark Starfont" to="/accueil">Acceuil</a>
+                    <Link className="nav-link text-dark" to="/acceuil">Acceuil</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link text-dark Starfont" to="/recherche">Recherche</a>
+                    <Link className="nav-link text-dark" to="/recherche">Recherche</Link>
                 </li>
 
             </ul>
