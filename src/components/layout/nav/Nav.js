@@ -4,10 +4,10 @@ function Nav() {
         <nav className="bg-warning">
             <ul className="nav">
                 <li className="nav-item">
-                    <Link className="nav-link text-dark" to="/acceuil">Acceuil</Link>
+                    <Link className="nav-link text-dark Starfont" to="/acceuil">Acceuil</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-dark" to="/recherche">Recherche</Link>
+                    <Link className="nav-link text-dark Starfont" to="/recherche">Recherche</Link>
                 </li>
 
             </ul>

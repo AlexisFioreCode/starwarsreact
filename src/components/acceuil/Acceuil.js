@@ -1,17 +1,61 @@
-function Acceuil() {
-    return (
-        <div>
-            <p>Acceuil</p>
-            <div className="card text-center bg-dark" style={{width: 18 + "rem"}}>
-                <img src="https://media.anakinworld.com/uploads/entries/square_medium/luke-skywalker-1211dc3c83b3799dfe1f9514e32f648f7c63b4ee.jpeg" className="card-img-top mx-auto d-block" alt="Luke Skywalker" style={{width: 9 + "rem"}} />
-                <div className="card-body text-white">
-                    <h5 className="card-title">Les personnages</h5>
-                    <p className="card-text">Découvrez les personnages de la galaxie Star Wars</p>
-                    <a href="" className="btn btn-warning">Par ici !</a>
-                </div>      
-            </div>
-        </div>    
-    );
-}
+import React from 'react';
+import Axios from 'axios';
+import Cards from './cards/Cards';
+
+class Acceuil extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            loaded: false,
+            error: false,
+            data: null,
+            cards: null
+        }       
+    }
+    componentDidMount() {
+        Axios.get("https://swapi.dev/api/")
+
+        .then((response) => {
+            console.log(Object.values(response))
+            let cards = Object.values(response.data.map((card)=>{
+                return <Cards card={card} />
+            }));
+
+            this.setState({
+                loaded: true,
+                data: response.data,
+                cards: cards
+            })
+        })
+        .catch((error) => {
+            this.setState({
+                loaded: true,
+                error: error
+            })
+        })
+    }
+    render() {
+        if(this.state.loaded) {
+            if(this.state.error) {
+                return(
+                    <p>Une erreur est survenue :-(. Message : {this.state.error.message}</p>
+                );
+            }
+            return(
+                <section>
+                    <h2 className="Starfont">Acceuil</h2>
+                    <div className="row">
+                        {this.state.cards}
+                    </div>
+                </section>
+            );
+        }
+        return(
+            <p>Vos données sont en cours de chargement</p>
+        );
+    }
+}   
+    
+
 
 export default Acceuil;
