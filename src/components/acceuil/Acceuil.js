@@ -16,10 +16,10 @@ class Acceuil extends React.Component {
         Axios.get("https://swapi.dev/api/")
 
         .then((response) => {
-            console.log(Object.values(response))
-            let cards = Object.values(response.data.map((card)=>{
+            console.log(Object.keys(response.data))
+            let cards = Object.keys(response.data).map((card)=>{
                 return <Cards card={card} />
-            }));
+            });
 
             this.setState({
                 loaded: true,
@@ -42,7 +42,7 @@ class Acceuil extends React.Component {
                 );
             }
             return(
-                <section>
+                <section className="container">
                     <h2 className="Starfont">Acceuil</h2>
                     <div className="row">
                         {this.state.cards}
