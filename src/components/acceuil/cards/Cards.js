@@ -5,7 +5,7 @@ function Cards(props) {
                 <div className="card-body text-white">
                     <h5 className="card-title">{props.cards}</h5>
                     <p className="card-text">Découvrez les {props.cards} de la galaxie Star Wars</p>
-                    <a href="" className="btn btn-warning">Par ici !</a>
+                    <a href="#" className="btn btn-warning">Par ici !</a>
                 </div>      
             </div>
         </div>
