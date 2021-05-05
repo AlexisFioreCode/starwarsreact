@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/starwarsreact/static/css/main.d338e7e8.chunk.css",
+    "main.js": "/starwarsreact/static/js/main.c7d64254.chunk.js",
+    "main.js.map": "/starwarsreact/static/js/main.c7d64254.chunk.js.map",
+    "runtime-main.js": "/starwarsreact/static/js/runtime-main.4c9220c9.js",
+    "runtime-main.js.map": "/starwarsreact/static/js/runtime-main.4c9220c9.js.map",
+    "static/js/2.f23e2172.chunk.js": "/starwarsreact/static/js/2.f23e2172.chunk.js",
+    "static/js/2.f23e2172.chunk.js.map": "/starwarsreact/static/js/2.f23e2172.chunk.js.map",
+    "static/js/3.6eccb203.chunk.js": "/starwarsreact/static/js/3.6eccb203.chunk.js",
+    "static/js/3.6eccb203.chunk.js.map": "/starwarsreact/static/js/3.6eccb203.chunk.js.map",
+    "index.html": "/starwarsreact/index.html",
+    "static/css/main.d338e7e8.chunk.css.map": "/starwarsreact/static/css/main.d338e7e8.chunk.css.map",
+    "static/js/2.f23e2172.chunk.js.LICENSE.txt": "/starwarsreact/static/js/2.f23e2172.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/starwarsreact/static/media/Starjedi.8d577dc1.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c9220c9.js",
+    "static/js/2.f23e2172.chunk.js",
+    "static/css/main.d338e7e8.chunk.css",
+    "static/js/main.c7d64254.chunk.js"
+  ]
+}
