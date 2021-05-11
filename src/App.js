@@ -26,7 +26,7 @@ function App() {
               <Recherche/>
             </Route>
             <Route path="/">
-              <Acceuil />
+              <Accueil />
             </Route>
           </Switch>
         </main>
