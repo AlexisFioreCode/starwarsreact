@@ -2,7 +2,7 @@ import React from 'react';
 import Axios from 'axios';
 import Cards from './cards/Cards';
 
-class Acceuil extends React.Component {
+class Accueil extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -43,7 +43,7 @@ class Acceuil extends React.Component {
             }
             return(
                 <section className="container">
-                    <h2 className="Starfont">Acceuil</h2>
+                    <h2 className="Starfont">Accueil</h2>
                     <div className="row">
                         {this.state.cards}
                     </div>
@@ -58,4 +58,4 @@ class Acceuil extends React.Component {
     
 
 
-export default Acceuil;
+export default Accueil;

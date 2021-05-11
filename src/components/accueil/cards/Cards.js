@@ -1,6 +1,6 @@
 function Cards(props) {
     return (
-        <div className='col-4 my-3'>
+        <div className='col-12 col-sm-6 col-md-4 col-lg-4 my-1'>
             <div className="card text-center bg-dark">
                 <div className="card-body text-white">
                     <h5 className="card-title">{props.card}</h5>

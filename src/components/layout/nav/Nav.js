@@ -4,7 +4,7 @@ function Nav() {
         <nav className="bg-warning">
             <ul className="nav">
                 <li className="nav-item">
-                    <Link className="nav-link text-dark Starfont" to="/acceuil">Acceuil</Link>
+                    <Link className="nav-link text-dark Starfont" to="/accueil">Accueil</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link text-dark Starfont" to="/recherche">Recherche</Link>
