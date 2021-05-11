@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/layout/header/Header';
 import Footer from './components/layout/footer/Footer';
 import Nav from './components/layout/nav/Nav';
-import Acceuil from './components/acceuil/Acceuil';
+import Accueil from './components/accueil/Accueil';
 import Recherche from './components/recherche/Recherche';
 import React from "react";
 import {
@@ -19,8 +19,8 @@ function App() {
         <Nav />
         <main className="container my-5">
           <Switch>
-            <Route path="/acceuil">
-              <Acceuil />
+            <Route path="/accueil">
+              <Accueil />
             </Route>
             <Route path="/recherche">
               <Recherche/>
